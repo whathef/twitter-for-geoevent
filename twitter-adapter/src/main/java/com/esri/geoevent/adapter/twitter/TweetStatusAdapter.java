@@ -55,7 +55,7 @@ public class TweetStatusAdapter extends InboundAdapterBase
 {
 	private static final BundleLogger	LOGGER			= BundleLoggerFactory.getLogger(TweetStatusAdapter.class);
 	private ObjectMapper							mapper			= new ObjectMapper();
-	private SimpleDateFormat					sdf					= new SimpleDateFormat("EEE MMM dd HH:mm:ss Z yyyy");
+	private SimpleDateFormat					sdf					= new SimpleDateFormat("EEE MMM dd HH:mm:ss Z yyyy", Locale.ENGLISH);
 	private Charset										charset;
 	private CharsetDecoder						decoder;
 
